@@ -1,0 +1,33 @@
+.card {
+  position: relative;
+  max-width: 340px;
+  height: 340px;
+  border-radius: 10px;
+  background-color: var(--colorRed);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.card::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(0, 0, 0, 1) 150%
+  );
+}
+
+.card h2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #ffffff;
+  z-index: 1;
+  margin: 20px;
+}

@@ -1,0 +1,33 @@
+.header {
+  max-width: 1280px;
+  /* width: 100%; */
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.header img{
+  padding-right: 20px;
+}
+
+.nav{
+  display: flex;
+  gap: 57px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .header {
+      padding: 20px;
+  }
+
+  .header img {
+      max-width: 145px;
+  }
+
+  .nav {
+    gap: 10px;
+  }
+}
