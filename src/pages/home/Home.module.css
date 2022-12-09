@@ -6,12 +6,23 @@
 } */
 
 .cards {
-    margin-block: 50px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
-    justify-content: space-between;
-    padding: 50px;
-    border-radius: 25px;
-    background: var(--colorGreyLight);
+  margin-block: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  justify-content: space-between;
+  padding: 50px;
+  border-radius: 25px;
+  background: var(--colorGreyLight);
+}
+
+@media screen and (max-width: 768px) {
+  .cards {
+    margin-block: 20px;
+    grid-template-columns: 1fr;
+    gap: 22px;
+    background: none;
+    padding: 0;
+  }
+
 }

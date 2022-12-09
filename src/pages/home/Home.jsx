@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Banner from "../../components/banner/Banner";
+import HomeBanner from "../../components/homeBanner/HomeBanner";
 import Card from "../../components/card/Card";
 import style from "./Home.module.css";
 
@@ -16,11 +16,12 @@ function Home() {
   }, [navigate]);
   return (
     <div className={style.home}>
-      <Banner />
-      <section className={style.cards}>{data &&
-        data.length > 0 &&
-        data.map((item) => <Card data={item} key={item.id} />)}</section>
-      
+      <HomeBanner />
+      <section className={style.cards}>
+        {data &&
+          data.length > 0 &&
+          data.map((item) => <Card data={item} key={item.id} />)}
+      </section>
     </div>
   );
 }

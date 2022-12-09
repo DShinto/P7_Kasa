@@ -1,0 +1,44 @@
+.banner {
+  position: relative;
+  height: 223px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-image: url("../../assets/home_background.jpg");
+  background-size: cover;
+  border-radius: 25px;
+}
+
+.banner::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: #000000;
+  opacity: 0.3;
+}
+
+.banner h1{
+  z-index: 1;
+  font-weight: 500;
+  font-size: 48px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.banner h1 span {
+  color: white;
+}
+
+
+@media screen and (max-width: 768px) {
+  .banner {
+    border-radius: 10px;
+    height: 111px;
+  }
+
+  .banner h1 {
+    font-size: 24px;
+    padding-left: 10%;
+  }
+}

@@ -1,6 +1,5 @@
 .card {
   position: relative;
-  max-width: 340px;
   height: 340px;
   border-radius: 10px;
   background-color: var(--colorRed);
@@ -8,7 +7,7 @@
   overflow: hidden;
 }
 
-.card::after {
+/* .card::after {
   position: absolute;
   content: "";
   inset: 0;
@@ -17,7 +16,7 @@
     rgba(255, 255, 255, 0) 50%,
     rgba(0, 0, 0, 1) 150%
   );
-}
+} */
 
 .card h2 {
   position: absolute;
@@ -30,4 +29,15 @@
   color: #ffffff;
   z-index: 1;
   margin: 20px;
+}
+
+.card img {
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    height: 255px;
+  }
 }
