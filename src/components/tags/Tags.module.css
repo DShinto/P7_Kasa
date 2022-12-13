@@ -1,0 +1,24 @@
+.wrapper {
+  margin-block: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.tag {
+  background: var(--colorRed);
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+  padding: 5px 40px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+      flex-wrap: wrap;
+  }
+  .tag {
+      padding: 5px 20px;
+      font-size: 10px;
+  }
+}

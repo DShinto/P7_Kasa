@@ -12,11 +12,12 @@ html {
   margin: 0;
   padding: 0;
   color: var(--colorRed);
+  font-size: 24px;
 }
 
 :root {
   --colorRed: #ff6060;
-  --colorGreyLight: #f6f6f6;
+  --colorGreyLight: #F7F7F7;
   --colorGreyDark: #e3e3e3;
   --colorDark: #000000;
   --colorLight: #ffffff;

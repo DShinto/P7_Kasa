@@ -7,7 +7,7 @@
   overflow: hidden;
 }
 
-/* .card::after {
+.card::after {
   position: absolute;
   content: "";
   inset: 0;
@@ -16,7 +16,7 @@
     rgba(255, 255, 255, 0) 50%,
     rgba(0, 0, 0, 1) 150%
   );
-} */
+}
 
 .card h2 {
   position: absolute;

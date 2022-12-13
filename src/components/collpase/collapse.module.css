@@ -1,0 +1,31 @@
+.collapse {
+  position: relative;
+  height: 47px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--colorRed);
+  border-radius: 5px;
+  padding: 0 20px;
+}
+
+.collapse h2 {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.chevronDown {
+  position: relative;
+  top: 3px;
+}
+
+.p {
+  background: var(--colorGreyLight);
+  border-radius: 5px;
+  padding-top: 36px;
+  padding-bottom: 19px;
+  padding-left: 18px;
+  margin-top: -9px;
+  z-index: -1;
+}

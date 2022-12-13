@@ -1,0 +1,20 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.host {
+  font-size: 18px;
+  line-height: 26px;
+  max-width: min-content;
+  text-align: right;
+  font-weight: 500;
+}
+
+.photo {
+  max-width: 64px;
+  border-radius: 50%;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+}

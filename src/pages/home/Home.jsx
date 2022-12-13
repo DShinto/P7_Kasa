@@ -14,6 +14,7 @@ function Home() {
       .then((myJson) => setData(myJson))
       .catch(() => navigate("/error"));
   }, [navigate]);
+
   return (
     <div className={style.home}>
       <HomeBanner />
