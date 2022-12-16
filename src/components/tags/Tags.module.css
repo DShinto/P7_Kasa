@@ -17,8 +17,9 @@
   .wrapper {
       flex-wrap: wrap;
   }
-  .tag {
-      padding: 5px 20px;
+  .tag {  
+      padding: 2.5px 20px;
       font-size: 10px;
+      height: 18px;
   }
 }

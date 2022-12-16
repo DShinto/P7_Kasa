@@ -2,10 +2,9 @@
   height: 209px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   background: var(--colorDark);
-  gap: 29px;
 }
 
 .footer img {
@@ -15,4 +14,17 @@
 
 .footer p {
   color: var(--colorLight);
+  margin: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .footer p {
+    font-size: 12px;
+    margin: 0;
+  }
 }

@@ -1,0 +1,36 @@
+.star {
+  display: flex;
+  justify-content: flex-end;
+  gap: 4px;
+  margin-block: 10px;
+}
+
+.starInactive {
+  color: var(--colorGreyDark);
+  font-size: 30px;
+}
+
+.starActive {
+  color: var(--colorRed);
+  font-size: 30px;
+}
+
+@media screen and (max-width: 991px) {
+  .starInactive {
+    font-size: 24px;
+  }
+  
+  .starActive {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .starInactive {
+    font-size: 15px;
+  }
+  
+  .starActive {
+    font-size: 15px;
+  }
+}

@@ -1,7 +1,16 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .collapse {
   position: relative;
-  height: 47px;
   display: flex;
+  width: 100%;
+  height: 47px;
   justify-content: space-between;
   align-items: center;
   background: var(--colorRed);
@@ -25,7 +34,27 @@
   border-radius: 5px;
   padding-top: 36px;
   padding-bottom: 19px;
+  padding-right: 18px;
   padding-left: 18px;
   margin-top: -9px;
-  z-index: -1;
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .collapse {
+    height: 30px;
+  }
+
+  .collapse h2 {
+    font-size: 13px;
+  }
+
+  .chevronUp {
+    position: relative;
+    top: -2.5px;
+  }
+  .p,
+  .p > p {
+    font-size: 12px;
+  }
 }

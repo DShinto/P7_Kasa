@@ -1,5 +1,7 @@
 import { useState } from "react";
 import style from "./Slideshow.module.css";
+import LeftArrow from "../../assets/leftArrow.svg";
+import RightArrow from "../../assets/rightArrow.svg";
 
 const Carousel = ({ pictures }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -36,10 +38,10 @@ const Carousel = ({ pictures }) => {
       {pictures.length > 1 && (
         <>
           <button onClick={prev} className={style.leftArrow}>
-            &lt;
+            <img src={LeftArrow} alt="fleche gauche" />
           </button>
           <button onClick={next} className={style.rightArrow}>
-            &gt;
+            <img src={RightArrow} alt="fleche droite" />
           </button>
         </>
       )}

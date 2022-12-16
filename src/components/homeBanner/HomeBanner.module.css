@@ -18,18 +18,17 @@
   opacity: 0.3;
 }
 
-.banner h1{
+.banner h1 {
   z-index: 1;
   font-weight: 500;
-  font-size: 48px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .banner h1 span {
   color: white;
+  font-size: 48px;
 }
-
 
 @media screen and (max-width: 768px) {
   .banner {
@@ -38,7 +37,10 @@
   }
 
   .banner h1 {
-    font-size: 24px;
     padding-left: 10%;
+  }
+
+  .banner h1 span {
+    font-size: 24px;
   }
 }

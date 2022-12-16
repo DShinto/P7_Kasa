@@ -1,4 +1,73 @@
+.container {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
 .heading {
   display: flex;
   justify-content: space-between;
+  margin-top: 30px;
+}
+
+.heading h2 {
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.heading p {
+  font-size: 18px;
+}
+
+.wrapper {
+  max-width: 1240px;
+  display: flex;
+  flex-direction: row;
+  gap: 76px;
+}
+
+.item {
+  width: 50%;
+  display: flex;
+}
+
+.item div:last-child,
+.item div:last-child p {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .heading {
+    flex-direction: column;
+  }
+
+  .heading h2 {
+    font-size: 18px;
+  }
+
+  .heading p {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  .profilContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .item {
+    width: 100%;
+  }
+
+  .item div:last-child,
+  .item div:last-child p {
+    font-size: 12px;
+  }
 }

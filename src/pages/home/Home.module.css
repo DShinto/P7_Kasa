@@ -1,12 +1,9 @@
-/* .home {
-  max-width: 1240px;
-  margin: auto;
-  align-items: center;
-  padding: 40px 20px;
-} */
+.home {
+  margin-top: 63px;
+}
 
 .cards {
-  margin-block: 50px;
+  margin-block: 43px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
@@ -17,6 +14,10 @@
 }
 
 @media screen and (max-width: 768px) {
+
+  .home {
+    margin-top: 22px;
+  }
   .cards {
     margin-block: 20px;
     grid-template-columns: 1fr;
