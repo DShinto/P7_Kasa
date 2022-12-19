@@ -24,6 +24,14 @@
   gap: 57px;
 }
 
+.nav a {
+  transition: transform 100ms linear;
+}
+
+.nav a:hover {
+  transform: scale(1.1);
+}
+
 .linkActive {
   border-bottom: 1px solid var(--colorRed);
   font-size: 24px;

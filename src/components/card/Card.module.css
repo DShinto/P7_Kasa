@@ -5,6 +5,7 @@
   background-color: var(--colorRed);
   cursor: pointer;
   overflow: hidden;
+  transition: box-shadow 100ms linear;
 }
 
 .card::after {
@@ -16,6 +17,10 @@
     rgba(255, 255, 255, 0) 50%,
     rgba(0, 0, 0, 1) 150%
   );
+}
+
+.card:hover {
+  box-shadow: 0 0 10px 0 rgba(119, 119, 119, 0.8);
 }
 
 .card h2 {

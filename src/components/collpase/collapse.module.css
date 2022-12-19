@@ -38,6 +38,31 @@
   padding-left: 18px;
   margin-top: -9px;
   flex-grow: 1;
+  z-index: -1;
+  animation: slide 300ms ease-out;
+  /* animation: opacity 300ms linear; */
+  transform-origin: top;
+  overflow: hidden;
+}
+
+@keyframes slide {
+  from {
+    transform: scaleY(0);
+  }
+
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 768px) {
