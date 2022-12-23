@@ -63,4 +63,16 @@
   .rightArrow img {
     height: 24px;
   }
+
+  .leftArrow {
+    left: 5px;
+  }
+
+  .rightArrow {
+    right: 5px;
+  }
+
+  .pagination {
+    display: none;
+  }
 }

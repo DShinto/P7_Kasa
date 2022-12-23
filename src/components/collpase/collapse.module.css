@@ -18,10 +18,19 @@
   padding: 0 20px;
 }
 
+.housingCollapse {
+  composes: collapse;
+  border-radius: 10px;
+}
+
 .collapse h2 {
   color: white;
   font-size: 24px;
   font-weight: 500;
+}
+.chevronUp,
+.chevronDown {
+  width: 24px;
 }
 
 .chevronDown {
@@ -29,20 +38,33 @@
   top: 3px;
 }
 
+.housingChevronDown,
+.housingChevronUp {
+  width: 26px;
+}
+
+.housingChevronDown {
+  composes: chevronDown;
+}
+
 .p {
   background: var(--colorGreyLight);
   border-radius: 5px;
-  padding-top: 36px;
-  padding-bottom: 19px;
+  padding-top: 27px;
+  padding-bottom: 5px;
   padding-right: 18px;
   padding-left: 18px;
   margin-top: -9px;
   flex-grow: 1;
   z-index: -1;
   animation: slide 300ms ease-out;
-  /* animation: opacity 300ms linear; */
   transform-origin: top;
   overflow: hidden;
+}
+
+.housingP {
+  composes: p;
+  border-radius: 10px;
 }
 
 @keyframes slide {
@@ -55,16 +77,6 @@
   }
 }
 
-@keyframes opacity {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .collapse {
     height: 30px;
@@ -74,12 +86,38 @@
     font-size: 13px;
   }
 
+  .chevronUp,
+  .chevronDown {
+    width: 15px;
+  }
+
   .chevronUp {
     position: relative;
     top: -2.5px;
   }
+
+  .housingChevronDown,
+  .housingChevronUp {
+    width: 15px;
+  }
+
+  .housingChevronUp {
+    composes: chevronUp;
+  }
+
+  .housingChevronDown {
+    top: 0;
+  }
+
   .p,
   .p > p {
     font-size: 12px;
+  }
+
+  .p {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 11px;
+    padding-right: 6px;
   }
 }

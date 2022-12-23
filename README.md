@@ -63,7 +63,7 @@ fonctionnels plutôt que des composants classes.
 
 - Le code ne doit pas produire d'erreur ou de warning dans la console.
 
-#### Contarintes fonctionnelles
+#### Contraintes fonctionnelles
 
 Quelques précisions sur les fonctionnalités du site :
 
