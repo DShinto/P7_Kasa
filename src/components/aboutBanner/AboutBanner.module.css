@@ -6,8 +6,9 @@
   align-items: center;
   margin-top: 44px;
   overflow: hidden;
-  background-image: url("../../assets/about_bgackground.jpg");
+  background-image: url("../../assets/about_BG.jpg");
   background-size: cover;
+  background-position-y: -240px;
   border-radius: 25px;
 }
 
@@ -15,14 +16,15 @@
   position: absolute;
   content: "";
   inset: 0;
-  background: #000000;   
+  background: #000000;
   opacity: 0.3;
 }
 
 @media screen and (max-width: 768px) {
   .banner {
-    height: 111px;
+    height: 223px;
     margin-top: 17px;
     border-radius: 10px;
+    background-position-y: 0;
   }
 }
